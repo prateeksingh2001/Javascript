@@ -22,6 +22,7 @@
 //In Typescipt
 //const score:number = 100
 
+/*
 //Primitive
 const score = 100
 const scoreValue = 100.3
@@ -36,7 +37,7 @@ console.log(id === anotherId);
 
 const bigNumber = 1246528461635633n //n represents bigInt
 
-//Reference
+//Reference (Non-Primitive)
 
 const heros = ["shaktiman", "naagraj", "doga"]
 
@@ -53,3 +54,31 @@ console.log(typeof bigNumber)
 console.log(typeof outsideTemp)
 console.log(typeof scoreValue)
 console.log(typeof myFunction) // object function bola jata hai
+
+*/
+
+/************************************************************/
+
+//Stack Memory -> Primitive  -> value
+//Heap Memory -> Non-Primitive  -> reference
+
+let myCollegeName = "LNMIIT"
+
+let anotherName = myCollegeName
+anotherName = "LNM Institute of IT"
+
+console.log(anotherName)   //output ->  LNM Institute of IT
+console.log(myCollegeName) //output ->  LNMIIT
+
+
+let userOne = {
+    Name: "Prateek",
+    Email: "abc@gmail.com"
+}
+console.log(userOne.Email) //output ->  abc@gmail.com
+
+let userTwo = userOne
+userTwo.Email = "qwerty@gmail.com"
+
+console.log(userTwo.Email)  //output -> qwerty@gmail.com
+console.log(userOne.Email)  //output -> qwerty@gmail.com
