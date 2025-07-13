@@ -4,7 +4,7 @@
 //[{}, {}, {}]
 
 //forof
-// for (const element of object) { object yahan par js wala object nhi hai object ka matlab hai kiske upar loop lagagna hai
+// for (const element of object) {        // object yahan par js wala object nhi hai object ka matlab hai kiske upar loop lagagna hai
     
 // }
 // const arr = [1, 2, 3, 4, 5]
@@ -25,8 +25,17 @@ const map = new Map()   //map is a object that holds key value pairs remembers o
 map.set('IN', "India")
 map.set('FR', "France")
 map.set('ENG', "England")
-console.log(map);
+//console.log(map);
 
-for (const [key, value] of map) {
+for (const [key, value] of map) {   //Done to access both keys and value this destructured
     console.log(key, ':-', value)
+}
+
+const myObject = {
+    game1: 'ViceCity',
+    game2: 'LibertyCity',
+}
+
+for (const [key, value] of myObject) { //Error it is not iterable like this
+    console.log(key, ':-', value);
 }
